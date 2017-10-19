@@ -1,0 +1,136 @@
+body {
+  background-color: #D0D0D0;
+  margin: 15px;
+  font-family: Arimo;
+  color: white;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+button {
+  background-color: #ECBEAE;
+  border: 2px white solid;
+  padding: 14px;
+  color: white;
+  margin-right: 8px;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.column2 {
+  /*background-image: url('images/windRiverRangeShrt.jpg');*/
+  width: 93%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:  93%;
+  border: 2px solid black;
+}
+
+section {
+  position: relative;
+  display: inline-block;
+  width: 186px;
+  height: 187px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  background-color: #ECBEAE;
+  height: 189px;
+  width: 375px;
+}
+
+.one {
+  background-color: #A2A8AD;
+}
+
+.two {
+  background-color: #8A99A4;
+}
+
+.three {
+  background-color: #3F3D2A;
+}
+
+.four {
+  background-color: #FBE4D0;
+}
+
+.five {
+  background-color: #A2A8AD;
+}
+
+.six {
+  background-color: #8A99A4;
+}
+
+.seven {
+  background-color: #3F3D2A;
+}
+
+.thumbnails {
+  position: absolute;
+  width: 25%;
+  left: 40%;
+  top: 20%;
+}
+
+.picture {
+  object-fit: contain;
+  width: 100%;
+}
+
+#history {
+    width: 60%;
+    left: 21%;
+    top: 30%;
+}
+
+#camping {
+  width: 43%;
+  left: 28%;
+  top: 28%;
+}
+
+#canoe {
+  width: 47%;
+  left: 27%;
+  top: 26%;
+}
+
+#map {
+  width: 30%;
+  left: 36%;
+}
+
+#bear {
+    width: 45%;
+    left: 27%;
+    top: 26%;
+}
+
+#plant {
+    width: 40%;
+    left: 34%;
+    top: 15%;
+}
+/*F8C9A8
+A2A8AD
+8A99A4
+313221
+  
