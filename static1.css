@@ -1,62 +1,99 @@
+article {
+  background-image: url('images/windRiverRangeOrg.jpg');
+  width: 100%;
+  height: 35vh;
+  max-height: 20em;
+  background-repeat: no-repeat;
+  background-position: 0% 17%;
+  background-size: cover;
+}
+
 body {
   background-color: #D0D0D0;
-  margin: 15px;
+  margin: 0em;
   font-family: Arimo;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 6% 0em 0em 0em;
+} 
 
 h1,
 p {
   text-align: center;
 }
 
+p {
+  margin: 0.3em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
 button {
   background-color: #ECBEAE;
-  border: 2px white solid;
-  padding: 14px;
+  border: .2em #FFFFFF solid;
+  padding: 1em;
   color: white;
-  margin-right: 8px;
+  margin: 2%;
+  width: 10em;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: .9em;
   text-align: center;
-  margin-top: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .column2 {
-  /*background-image: url('images/windRiverRangeShrt.jpg');*/
-  width: 93%;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:  100%;
+  /*border: 2px solid black;*/
 }
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width:  93%;
-  border: 2px solid black;
+  flex-direction: column-reverse;
+
 }
 
 section {
   position: relative;
   display: inline-block;
-  width: 186px;
-  height: 187px;
-}
-
-div {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 20vh;
+  max-height: 13em;
 }
 
 .header {
+  display: flex;
   background-color: #ECBEAE;
-  height: 189px;
-  width: 375px;
+  height: 25vh;
+  width: 100%;
+  max-height: 13em;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .one {
   background-color: #A2A8AD;
+  width: 100%;
 }
 
 .two {
@@ -86,7 +123,7 @@ div {
 .thumbnails {
   position: absolute;
   width: 25%;
-  left: 40%;
+  left: 38%;
   top: 20%;
 }
 
@@ -96,14 +133,14 @@ div {
 }
 
 #history {
-    width: 60%;
-    left: 21%;
-    top: 30%;
+    width: 32%;
+    left: 34%;
+    top: 25%;
 }
 
 #camping {
   width: 43%;
-  left: 28%;
+  left: 29%;
   top: 28%;
 }
 
@@ -129,8 +166,103 @@ div {
     left: 34%;
     top: 15%;
 }
-/*F8C9A8
-A2A8AD
-8A99A4
-313221
+
+@media (min-width: 490px) and (max-width: 900px) {
   
+  .header {
+    width: 66.6%;
+    height: 22vh;
+  }
+
+  main {
+    width:  100%;
+  }
+
+  section {
+    width: 33.333%;
+    height: 22vh;
+  }
+
+  .one {
+    background-color: #A2A8AD;
+    width: 33.4%;
+  }
+
+  .column2 {
+    width: 100%;
+  }
+
+  #history {
+    width: 60%;
+    left: 22%;
+    top: 28%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  body {
+    margin: 1em;
+  }
+
+  h2 {
+    bottom: 5.2em;
+  }
+
+  h1,
+  p {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  div {
+    width: 66.66%;
+    align-content: flex-start;
+  }
+
+  form {
+  justify-content: left;
+  margin-left: 6%;
+  }
+
+  .header {
+    width: 66.66%;
+    height: 33.33vh;
+    max-height: 18em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    width: 33.33%;
+    height: 33.33vh;
+    max-height: 18em;
+  }
+
+  article {
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 64% 17%;
+    background-size: cover;
+  }
+
+  .column2 {
+    width: 40%;
+    height: 100vh;
+  }
+
+  .one {
+    width: 33.33%;
+  }
+
+  #history {
+    width: 57%;
+    left: 23%;
+    top: 30%;
+  }
+
+  }
