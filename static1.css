@@ -40,10 +40,10 @@ form {
 button {
   background-color: #ECBEAE;
   border: .2em #FFFFFF solid;
-  padding: 3%;
+  padding: 1em;
   color: white;
   margin: 2%;
-  flex: .3;
+  width: 10em;
 }
 
 h2 {
@@ -81,10 +81,14 @@ section {
 }
 
 .header {
+  display: flex;
   background-color: #ECBEAE;
   height: 25vh;
   width: 100%;
   max-height: 13em;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .one {
@@ -194,4 +198,71 @@ section {
     top: 28%;
   }
 }
-  
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  body {
+    margin: 1em;
+  }
+
+  h2 {
+    bottom: 5.2em;
+  }
+
+  h1,
+  p {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  div {
+    width: 66.66%;
+    align-content: flex-start;
+  }
+
+  form {
+  justify-content: left;
+  margin-left: 6%;
+  }
+
+  .header {
+    width: 66.66%;
+    height: 33.33vh;
+    max-height: 18em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    width: 33.33%;
+    height: 33.33vh;
+    max-height: 18em;
+  }
+
+  article {
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 64% 17%;
+    background-size: cover;
+  }
+
+  .column2 {
+    width: 40%;
+    height: 100vh;
+  }
+
+  .one {
+    width: 33.33%;
+  }
+
+  #history {
+    width: 57%;
+    left: 23%;
+    top: 30%;
+  }
+
+  }
