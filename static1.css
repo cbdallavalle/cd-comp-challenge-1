@@ -6,6 +6,7 @@ article {
   background-repeat: no-repeat;
   background-position: 0% 17%;
   background-size: cover;
+  position: relative;
 }
 
 body {
@@ -35,6 +36,7 @@ p {
 form {
   display: flex;
   justify-content: center;
+  margin-top: 1em;
 }
 
 button {
@@ -42,7 +44,6 @@ button {
   border: .2em #FFFFFF solid;
   padding: 1em;
   color: white;
-  margin: 2%;
   width: 10em;
 }
 
@@ -50,8 +51,6 @@ h2 {
   font-size: .9em;
   text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .column2 {
@@ -73,15 +72,19 @@ main {
 }
 
 section {
-  position: relative;
-  display: inline-block;
   width: 50%;
   height: 20vh;
   max-height: 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
   background-color: #ECBEAE;
   height: 25vh;
   width: 100%;
@@ -89,6 +92,7 @@ section {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .one {
@@ -121,15 +125,58 @@ section {
 }
 
 .thumbnails {
-  position: absolute;
   width: 25%;
-  left: 38%;
-  top: 20%;
 }
 
 .picture {
   object-fit: contain;
   width: 100%;
+}
+
+.circles {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: .6em;
+  height: .6em;
+  border-radius: 50%;
+  background-color: grey;
+  margin-top: 1em;
+}
+
+.front {
+  background-color: white;
+  margin-right: 3em;
+}
+
+.middle {
+  margin-right: 2em;
+}
+
+.last {
+  margin-right: 1em;
+}
+
+.left {
+  position: absolute;
+  background-image: url('images/leftArrow.png');
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  top: 46.8%;
+  left: 1em;
+  background-size: cover;
+}
+
+.right {
+  position: absolute;
+  background-image: url('images/rightArrow.png');
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  top: 46.8%;
+  right: 1em;
+  background-size: cover;
 }
 
 #history {
@@ -167,11 +214,19 @@ section {
     top: 15%;
 }
 
+#learn {
+  margin-right: 1em;
+}
+
 @media (min-width: 490px) and (max-width: 900px) {
   
   .header {
     width: 66.6%;
     height: 22vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1em;
   }
 
   main {
@@ -199,7 +254,7 @@ section {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1440px) {
+@media (min-width: 900px) {
   body {
     margin: 1em;
   }
@@ -232,15 +287,13 @@ section {
   .header {
     width: 66.66%;
     height: 33.33vh;
-    max-height: 18em;
-    justify-content: center;
-    align-items: center;
+    max-height: 21em;
   }
 
   section {
     width: 33.33%;
     height: 33.33vh;
-    max-height: 18em;
+    max-height: 21em;
   }
 
   article {
@@ -264,5 +317,4 @@ section {
     left: 23%;
     top: 30%;
   }
-
   }
