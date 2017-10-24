@@ -18,11 +18,15 @@ body {
 }
 
 button {
-  background-color: #ECBEAE;
+  background-color: #b27d6b;
   border: .2em #FFFFFF solid;
   color: white;
   padding: 1em;
   width: 11em;
+}
+
+button:hover {
+  background-color: #F3D2C5;
 }
 
 div {
@@ -75,24 +79,9 @@ section {
   width: 50%;
 }
 
+/*Styling for container holding image on right side of page*/
 .column2 {
   width: 100%;
-}
-
-.header {
-  align-content: center;
-  background-color: #ECBEAE;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 25vh;
-  justify-content: center;
-  width: 100%;
-}
-
-button:hover {
-  background-color: #F3D2C5;
 }
 
 .picture {
@@ -104,6 +93,7 @@ button:hover {
   width: 25%;
 }
 
+/*Styling for circles at top right of image*/
 .circles {
   background-color: grey;
   border-radius: 50%;
@@ -128,6 +118,7 @@ button:hover {
   margin-right: 1em;
 }
 
+/*Styling for arrows in middle of image*/
 .left {
   background-image: url('images/leftArrow.png');
   background-size: cover;
@@ -137,6 +128,10 @@ button:hover {
   position: absolute;
   top: 46.8%;
   width: 2.5em;
+}
+
+.left:hover {
+  background-image: url('images/leftArrowHover.png');
 }
 
 .right {
@@ -150,25 +145,42 @@ button:hover {
   width: 2.5em;
 }
 
+.right:hover {
+  background-image: url('images/rightArrowHover.png');
+}
+
+/*Styling for each section*/
+.header {
+  align-content: center;
+  background-color: #b27d6b;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 25vh;
+  justify-content: center;
+  width: 100%;
+}
+
 .one {
-  background-color: #aabac7;
+  background-color: #7590a3;
   width: 100%;
 }
 
 .one:hover {
-  background-color: #BEC7CE;
-}
-
-.two {
-  background-color: #7590a3;
-}
-
-.two:hover {
   background-color: #8ba8bc;
 }
 
+.two {
+  background-color: #4b4934;
+}
+
+.two:hover {
+  background-color: #8d8b67;
+}
+
 .three {
-  background-color: #f8c089;
+  background-color: #f4b270/*#f8c089*/;
 }
 
 .three:hover {
@@ -176,7 +188,7 @@ button:hover {
 }
 
 .four {
-  background-color: #ECBEAE;
+  background-color: #b27d6b;
 }
 
 .four:hover {
@@ -184,11 +196,11 @@ button:hover {
 }
 
 .five {
-  background-color: #4b4934;
+  background-color: #9eb2c2/*#7590a3*/;
 }
 
 .five:hover {
-  background-color: #5c5940;
+  background-color: #BEC7CE;
 }
 
 .six {
@@ -196,7 +208,7 @@ button:hover {
 }
 
 .six:hover {
-  background-color: #8ba8bc;
+  background-color: #99b5c9;
 }
 
 .seven {
@@ -204,9 +216,10 @@ button:hover {
 }
 
 .seven:hover {
-  background-color: #5c5940;
+  background-color: #8d8b67;
 }
 
+/*Styling for images in each section*/
 #bear {
   left: 27%;
   top: 26%;
