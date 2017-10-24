@@ -1,36 +1,35 @@
 article {
   background-image: url('images/windRiverRangeOrg.jpg');
-  width: 100%;
-  height: 35vh;
-  max-height: 20em;
-  background-repeat: no-repeat;
   background-position: 0% 17%;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 35vh;
   position: relative;
+  width: 100%;
 }
 
 body {
   background-color: #D0D0D0;
-  margin: 0em;
-  font-family: Arimo;
   color: white;
   display: flex;
   flex-direction: column;
+  font-family: Arimo;
+  margin: 0em;
 }
 
-h1 {
-  text-align: center;
-  font-size: 1.8em;
-  margin: 6% 0em 0em 0em;
-} 
-
-h1,
-p {
-  text-align: center;
+button {
+  background-color: #ECBEAE;
+  border: .2em #FFFFFF solid;
+  color: white;
+  padding: 1em;
+  width: 10em;
 }
 
-p {
-  margin: 0.3em;
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:  100%;
 }
 
 form {
@@ -39,12 +38,15 @@ form {
   margin-top: 1em;
 }
 
-button {
-  background-color: #ECBEAE;
-  border: .2em #FFFFFF solid;
-  padding: 1em;
-  color: white;
-  width: 10em;
+h1 {
+  font-size: 1.8em;
+  margin: 6% 0em 0em 0em;
+  text-align: center;
+} 
+
+h1,
+p {
+  text-align: center;
 }
 
 h2 {
@@ -53,79 +55,44 @@ h2 {
   width: 100%;
 }
 
-.column2 {
-  width: 100%;
-}
-
-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width:  100%;
-  /*border: 2px solid black;*/
-}
-
 main {
   display: flex;
   flex-direction: column-reverse;
 
 }
 
+p {
+  margin: 0.3em;
+}
+
 section {
-  width: 50%;
-  height: 20vh;
-  max-height: 13em;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  height: 21vh;
+  justify-content: center;
   text-align: center;
+  width: 50%;
+}
+
+.column2 {
+  width: 100%;
 }
 
 .header {
+  align-content: center;
+  background-color: #ECBEAE;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: #ECBEAE;
-  height: 25vh;
-  width: 100%;
-  max-height: 13em;
-  justify-content: center;
-  align-content: center;
   flex-wrap: wrap;
-  box-sizing: border-box;
-}
-
-.one {
-  background-color: #A2A8AD;
+  height: 25vh;
+  justify-content: center;
   width: 100%;
 }
 
-.two {
-  background-color: #8A99A4;
-}
-
-.three {
-  background-color: #3F3D2A;
-}
-
-.four {
-  background-color: #FBE4D0;
-}
-
-.five {
-  background-color: #A2A8AD;
-}
-
-.six {
-  background-color: #8A99A4;
-}
-
-.seven {
-  background-color: #3F3D2A;
-}
-
-.thumbnails {
-  width: 25%;
+button:hover {
+  background-color: #F3D2C5;
 }
 
 .picture {
@@ -133,15 +100,19 @@ section {
   width: 100%;
 }
 
+.thumbnails {
+  width: 25%;
+}
+
 .circles {
-  top: 0;
-  right: 0;
-  position: absolute;
-  width: .6em;
-  height: .6em;
-  border-radius: 50%;
   background-color: grey;
+  border-radius: 50%;
+  height: .6em;
   margin-top: 1em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .6em;
 }
 
 .front {
@@ -158,125 +129,171 @@ section {
 }
 
 .left {
-  position: absolute;
   background-image: url('images/leftArrow.png');
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  top: 46.8%;
-  left: 1em;
   background-size: cover;
+  border-radius: 50%;
+  height: 2.5em;
+  left: 1em;
+  position: absolute;
+  top: 46.8%;
+  width: 2.5em;
 }
 
 .right {
-  position: absolute;
   background-image: url('images/rightArrow.png');
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  top: 46.8%;
-  right: 1em;
   background-size: cover;
+  border-radius: 50%;
+  height: 2.5em;
+  position: absolute;
+  right: 1em;
+  top: 46.8%;
+  width: 2.5em;
 }
 
-#history {
-    width: 32%;
-    left: 34%;
-    top: 25%;
+.one {
+  background-color: #aabac7;
+  width: 100%;
 }
 
-#camping {
-  width: 43%;
-  left: 29%;
-  top: 28%;
+.one:hover {
+  background-color: #BEC7CE;
 }
 
-#canoe {
-  width: 47%;
-  left: 27%;
-  top: 26%;
+.two {
+  background-color: #7590a3;
 }
 
-#map {
-  width: 30%;
-  left: 36%;
+.two:hover {
+  background-color: #8ba8bc;
+}
+
+.three {
+  background-color: #f8c089;
+}
+
+.three:hover {
+  background-color: #F6CDA6;
+}
+
+.four {
+  background-color: #ECBEAE;
+}
+
+.four:hover {
+  background-color: #f4cbbc;
+}
+
+.five {
+  background-color: #4b4934;
+}
+
+.five:hover {
+  background-color: #5c5940;
+}
+
+.six {
+  background-color: #7590a3;
+}
+
+.six:hover {
+  background-color: #8ba8bc;
+}
+
+.seven {
+  background-color: #4b4934;
+}
+
+.seven:hover {
+  background-color: #5c5940;
 }
 
 #bear {
-    width: 45%;
-    left: 27%;
-    top: 26%;
+  left: 27%;
+  top: 26%;
+  width: 45%;
 }
 
-#plant {
-    width: 40%;
-    left: 34%;
-    top: 15%;
+#camping {
+  left: 29%;
+  top: 28%;
+  width: 43%;
+}
+
+#canoe {
+  left: 27%;
+  top: 26%;
+  width: 47%;
+}
+
+#history {
+  left: 34%;
+  top: 25%;
+  width: 32%;
 }
 
 #learn {
   margin-right: 1em;
 }
 
-@media (min-width: 490px) and (max-width: 900px) {
-  
-  .header {
-    width: 66.6%;
-    height: 22vh;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-left: 1em;
-  }
+#map {
+  left: 36%;
+  width: 30%;
+}
 
+#plant {
+  left: 34%;
+  top: 15%;
+  width: 40%;
+}
+
+@media (min-width: 490px) and (max-width: 900px) {
   main {
     width:  100%;
   }
 
   section {
-    width: 33.333%;
     height: 22vh;
-  }
-
-  .one {
-    background-color: #A2A8AD;
-    width: 33.4%;
+    width: 33.333%;
   }
 
   .column2 {
     width: 100%;
   }
 
+  .header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 22vh;
+    justify-content: center;
+    padding-left: 1em;
+    width: 66.6%;
+  }
+
+  .one {
+    width: 33.4%;
+  }
+
   #history {
-    width: 60%;
     left: 22%;
     top: 28%;
+    width: 60%;
   }
 }
 
 @media (min-width: 900px) {
+  article {
+    background-position: 64% 17%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   body {
-    margin: 1em;
-  }
-
-  h2 {
-    bottom: 5.2em;
-  }
-
-  h1,
-  p {
-    text-align: left;
-    margin-left: 6%;
-  }
-
-  main {
-    width: 100%;
-    flex-direction: row;
+    margin: 0em;
   }
 
   div {
-    width: 66.66%;
     align-content: flex-start;
+    width: 66.66%;
   }
 
   form {
@@ -284,28 +301,34 @@ section {
   margin-left: 6%;
   }
 
-  .header {
-    width: 66.66%;
-    height: 33.33vh;
-    max-height: 21em;
+  h1,
+  p {
+    margin-left: 6%;
+    text-align: left;
   }
 
+   h2 {
+    bottom: 5.2em;
+  }
+
+  main {
+    flex-direction: row;
+    width: 100%;
+  }
+  
   section {
-    width: 33.33%;
     height: 33.33vh;
-    max-height: 21em;
+    width: 33.33%;
   }
 
-  article {
-    max-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: 64% 17%;
-    background-size: cover;
-  }
-
-  .column2 {
-    width: 40%;
+ .column2 {
     height: 100vh;
+    width: 40%;
+  }
+
+  .header {
+    height: 33.33vh;
+    width: 66.66%;
   }
 
   .one {
@@ -313,8 +336,8 @@ section {
   }
 
   #history {
-    width: 57%;
     left: 23%;
     top: 30%;
+    width: 57%;
   }
-  }
+}
